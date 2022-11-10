@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My First Web Form</h1>
+    <form method="POST" autocomplete="on" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+        <fieldset>
+            <legend>Name Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" required id="firstName" title="Input Your First Name" placeholder="Input first name" name="firstName"><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" required id="firstName" title="Input Your Last Name" placeholder="Input last name" name="lastName">
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" title="Input Your Email Address" required id="email" placeholder="Input email address"><br>
+            <label for="telephone">Phone:</label>
+            <input type="tel" name="telephone" title="Input Your Phone Number" required id="telephone" placeholder="Input phone number">
+        </fieldset>
+        <fieldset>
+            <legend>Date of Information:</legend>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" required id="dob"><br>
+            <label for="today">Today's Date:</label>
+            <input type="date" name="today" value="2022-11-10" id="today">
+        </fieldset>
+        <fieldset>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <iframe name="cgi-results" id="cgi-results"/>
+</body>
+</html>
